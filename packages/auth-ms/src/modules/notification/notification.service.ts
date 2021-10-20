@@ -21,6 +21,8 @@ export class NotificationService {
       input,
     );
 
+    /*
+
     observable.subscribe({
       next: (data) => {
         console.log('NotificationService.userCreated.subscribe');
@@ -34,6 +36,10 @@ export class NotificationService {
         console.log('NotificationService.userCreated.subscribe.complete');
       },
     });
+
+    */
+
+    return observable;
   }
 
   userLogged(input: any) {

@@ -37,6 +37,6 @@ async function bootstrap() {
     },
   });
 
-  app.startAllMicroservices();
+  await app.startAllMicroservices();
 }
 bootstrap();

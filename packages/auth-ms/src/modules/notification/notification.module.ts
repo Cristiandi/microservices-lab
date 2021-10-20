@@ -15,23 +15,23 @@ import { NotificationService } from './notification.service';
       useFactory: (configService: ConfigService) => {
         // getting the microservice options
         const rabbitmqUser = configService.get<string>(
-          'config.notificationMS.user',
+          'config.notificationMS.rabbitmq.user',
         );
         const rabbitmqPassword = configService.get<string>(
-          'config.notificationMS.password',
+          'config.notificationMS.rabbitmq.password',
         );
         const rabbitmqHost = configService.get<string>(
-          'config.notificationMS.host',
+          'config.notificationMS.rabbitmq.host',
         );
         const rabbitmqVhost = configService.get<number>(
-          'config.notificationMS.vhost',
+          'config.notificationMS.rabbitmq.vhost',
         );
         const rabbiQueueName = configService.get<string>(
-          'config.notificationMS.queueName',
+          'config.notificationMS.rabbitmq.queueName',
         );
 
         const rabbitmqURL = configService.get<string>(
-          'config.notificationMS.url',
+          'config.notificationMS.rabbitmq.url',
         );
 
         const url =
