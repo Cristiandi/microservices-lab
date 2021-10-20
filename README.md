@@ -1,6 +1,6 @@
 # Microservices-lab
 
-This is just a little project to test the micro-services architecture using nestjs :fire: in different approaches.
+This is just a little project to test the micro-services architecture with nestjs :fire: applying different approaches.
 
 ## Requirements
 - nodejs version installed an greater than 14.X version.
